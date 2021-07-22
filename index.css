@@ -101,7 +101,6 @@ body{
 
 .imageBelowGridInfo{
   padding-top: 100px;
- 
 }
 
 .imageBelowGridInfo *{
@@ -157,7 +156,36 @@ body{
 
 .getEarlyAccesBox{
   background-color: hsl(219, 30%, 18%);
+  width: 35%;;
+  margin: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
+
+.getEarlyAccesBox button{
+  background-color: hsl(176, 68%, 64%);
+}
+
+.getStartetForFreeText{
+  font-size: 32px;
+  text-align: center;
+}
+
+.enterEmailDiv{
+  display: flex;
+  flex-direction: row;
+}
+
+h3{
+  text-align: center;
+  font-size: 16px;
+}
+
+.emailinput{
+  background-color: white;
+  flex: 3 1 ;
+}
+
 
 .colorWhite{
   color: white;
@@ -187,6 +215,25 @@ body{
 
   .quotes{
     flex-direction: column;
+  }
+
+  .enterEmailDiv{
+    flex-direction: column;
+  }
+
+  .getEarlyAccesBox{
+    width: 65%;;
+
+  }
+
+  .emailinput{
+    background-color: white;
+    width: 80%;
+  }
+
+  .registerEmailButton{
+    width: 80%;
+
   }
 
 
