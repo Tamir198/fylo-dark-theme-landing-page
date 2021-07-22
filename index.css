@@ -122,6 +122,41 @@ body{
   text-decoration-color:hsl(176, 68%, 64%);
 }
 
+.quotes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.quotes div{
+  flex: 0 0 25.33%;
+  padding-left: 16px;
+  background-color: hsl(219, 30%, 18%);
+  text-align: center;
+  margin: 6px;
+  height: fit-content;
+}
+
+.employeeIconAndInfo{
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  text-align: left;
+}
+
+.employeeInfo{
+  text-align: left;
+}
+
+.employeeIcon{
+  border-radius: 50%;
+  height: 50px;
+}
+
+.getEarlyAccesBox{
+  background-color: hsl(219, 30%, 18%);
+}
+
 .colorWhite{
   color: white;
 }
@@ -145,6 +180,10 @@ body{
   }
 
   .dataBelowGrid{
+    flex-direction: column;
+  }
+
+  .quotes{
     flex-direction: column;
   }
 
