@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url(https://fonts.google.com/specimen/Open+Sans);
+}
+
 body{
   background-color: hsl(218, 28%, 13%);
+  font-family: 'OpenSans';
 }
 
 .header {
@@ -14,7 +20,6 @@ body{
 
 .right-top-buttons a {
   margin: 30px;
-  color: white;
 }
 
 .left-top-icon {
@@ -26,6 +31,73 @@ body{
   height: 50px;
 }
 
+.illustration-intro-container{
+  width: 100%;
+  display: flex;
+}
+
+.illustration-intro-image{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.top-paragprph{
+  font-size: 32px;
+}
+
+.top-paragprph, .file-security-paragprph{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.getStartedButton{
+  text-align: center;
+  min-width: 100px;
+  width: 20%;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 8vh;
+  display: block;
+  background-color: hsl(176, 68%, 64%);
+}
+
+.infoGrid{
+  max-width: 100%;
+  float: center;
+  margin: 20px ;
+  display:grid;
+  justify-content: center;
+  grid-template-columns: 25% 25%;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  
+}
+
+.infoGridItem{
+  padding:20px;
+  border-radius:10px;
+  display:flex;
+  flex-flow: column;
+  align-items:center;
+  justify-content:center;
+  font-family:sans-serif;
+}
+
+.gridItemImage{
+  max-width: 100%;
+}
+
+.colorWhite{
+  color: white;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+
 @media only screen and (max-width: 500px) {
   .right-top-buttons a {
     margin: 6px;
@@ -34,6 +106,7 @@ body{
   .left-top-icon * {
     height: 16px;
   }
+
 
 }
 
