@@ -1,0 +1,41 @@
+body{
+  background-color: hsl(218, 28%, 13%);
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  vertical-align: middle
+}
+.right-top-buttons {
+  float: right;
+  padding: 16px;
+}
+
+.right-top-buttons a {
+  margin: 30px;
+  color: white;
+}
+
+.left-top-icon {
+  float: left;
+  margin: 6px;
+}
+
+.left-top-icon * {
+  height: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  .right-top-buttons a {
+    margin: 6px;
+  }
+
+  .left-top-icon * {
+    height: 16px;
+  }
+
+}
+
+
+
