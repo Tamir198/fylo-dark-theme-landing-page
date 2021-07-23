@@ -160,6 +160,9 @@ body{
   margin: auto;
   padding-left: 16px;
   padding-right: 16px;
+  height: fit-content;
+  padding: 16px;
+  
 }
 
 .getEarlyAccesBox button{
@@ -186,6 +189,32 @@ h3{
   flex: 3 1 ;
 }
 
+.bottonFyloIcon{
+  background-color: hsl(216, 53%, 9%);
+  width: 100%;
+}
+
+.bottomSection{
+  background-color: hsl(216, 53%, 9%);
+  height: 150px;
+  margin-bottom: -16px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.bottomSection *{
+  justify-content: space-evenly;
+}
+
+.bottomSectionIcons{
+  display: flex;
+}
+
+.bottomSectionIcons{
+  flex-direction: row;  
+}
+
 
 .colorWhite{
   color: white;
@@ -194,7 +223,6 @@ h3{
 .bold{
   font-weight: 700;
 }
-
 
 @media only screen and (max-width: 500px) {
   .right-top-buttons a {
@@ -222,8 +250,8 @@ h3{
   }
 
   .getEarlyAccesBox{
-    width: 65%;;
-
+    width: 65%;
+    height: fit-content;
   }
 
   .emailinput{
@@ -233,9 +261,13 @@ h3{
 
   .registerEmailButton{
     width: 80%;
-
   }
 
+  .bottomSection{
+    flex-direction: column;
+    height: 500px;
+    padding: 6px;
+  }
 
 }
 
