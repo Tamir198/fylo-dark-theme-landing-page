@@ -1,0 +1,275 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url(https://fonts.google.com/specimen/Open+Sans);
+}
+
+body{
+  background-color: hsl(218, 28%, 13%);
+  font-family: 'OpenSans';
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  vertical-align: middle
+}
+.right-top-buttons {
+  float: right;
+  padding: 16px;
+}
+
+.right-top-buttons a {
+  margin: 30px;
+}
+
+.left-top-icon {
+  float: left;
+  margin: 6px;
+}
+
+.left-top-icon * {
+  height: 50px;
+}
+
+.illustration-intro-container{
+  width: 100%;
+  display: flex;
+}
+
+.illustration-intro-image{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.top-paragprph{
+  font-size: 32px;
+}
+
+.top-paragprph, .file-security-paragprph{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.getStartedButton{
+  text-align: center;
+  min-width: 100px;
+  width: 20%;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 8vh;
+  display: block;
+  background-color: hsl(176, 68%, 64%);
+}
+
+.infoGrid{
+  max-width: 100%;
+  float: center;
+  margin: 20px ;
+  display:grid;
+  justify-content: center;
+  grid-template-columns: 25% 25%;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  
+}
+
+.infoGridItem{
+  padding:20px;
+  border-radius:10px;
+  display:flex;
+  flex-flow: column;
+  align-items:center;
+  justify-content:center;
+  font-family:sans-serif;
+}
+
+.gridItemImage{
+  max-width: 100%;
+}
+
+.dataBelowGrid{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.imageBelowGrid{
+  height: 450px;
+}
+
+.imageBelowGridInfo{
+  padding-top: 100px;
+}
+
+.imageBelowGridInfo *{
+  margin: 1px;
+  width: 350px;
+  margin: 8px;
+  padding-top: 18px;
+}
+
+.stayProductive{
+  font-size: 1.8em;
+}
+
+.howFyloWorksLink{
+  text-decoration: underline;
+  font-size: 20px;
+  counter-reset: hsl(176, 68%, 64%);
+  text-decoration-color:hsl(176, 68%, 64%);
+}
+
+.quotes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.quotes div{
+  flex: 0 0 25.33%;
+  padding-left: 16px;
+  background-color: hsl(219, 30%, 18%);
+  text-align: center;
+  margin: 6px;
+  height: fit-content;
+}
+
+.employeeIconAndInfo{
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  text-align: left;
+}
+
+.employeeInfo{
+  text-align: left;
+}
+
+.employeeIcon{
+  border-radius: 50%;
+  height: 50px;
+  align-self: center;
+
+}
+
+.getEarlyAccesBox{
+  background-color: hsl(219, 30%, 18%);
+  width: 35%;;
+  margin: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: fit-content;
+  padding: 16px;
+  
+}
+
+.getEarlyAccesBox button{
+  background-color: hsl(176, 68%, 64%);
+}
+
+.getStartetForFreeText{
+  font-size: 32px;
+  text-align: center;
+}
+
+.enterEmailDiv{
+  display: flex;
+  flex-direction: row;
+}
+
+h3{
+  text-align: center;
+  font-size: 16px;
+}
+
+.emailinput{
+  background-color: white;
+  flex: 3 1 ;
+}
+
+.bottonFyloIcon{
+  background-color: hsl(216, 53%, 9%);
+  width: 100%;
+}
+
+.bottomSection{
+  background-color: hsl(216, 53%, 9%);
+  height: 150px;
+  margin-bottom: -16px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.bottomSection *{
+  justify-content: space-evenly;
+}
+
+.bottomSectionIcons{
+  display: flex;
+}
+
+.bottomSectionIcons{
+  flex-direction: row;  
+}
+
+
+.colorWhite{
+  color: white;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 500px) {
+  .right-top-buttons a {
+    margin: 6px;
+  }
+
+  .left-top-icon * {
+    height: 16px;
+  }
+
+  .infoGrid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .dataBelowGrid{
+    flex-direction: column;
+  }
+
+  .quotes{
+    flex-direction: column;
+  }
+
+  .enterEmailDiv{
+    flex-direction: column;
+  }
+
+  .getEarlyAccesBox{
+    width: 65%;
+    height: fit-content;
+  }
+
+  .emailinput{
+    background-color: white;
+    width: 80%;
+  }
+
+  .registerEmailButton{
+    width: 80%;
+  }
+
+  .bottomSection{
+    flex-direction: column;
+    height: 500px;
+    padding: 6px;
+  }
+
+}
+
+
+
