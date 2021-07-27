@@ -3,19 +3,29 @@
   src: url(https://fonts.google.com/specimen/Open+Sans);
 }
 
+:root {
+  --main-background: hsl(218, 28%, 13%);
+  --cyne: hsl(176, 68%, 64%);
+  --white: #ffffff;
+  --width100Precent:  width: 100%;
+  --pixles20: 20px;
+  --pixles16: 16px;
+  --footerColor: hsl(216, 53%, 9%);
+}
+
 body{
-  background-color: hsl(218, 28%, 13%);
+  background-color: var(--main-background);
   font-family: 'OpenSans';
 }
 
 .header {
   height: 100px;
-  width: 100%;
+  width: var(--width100Precent);
   vertical-align: middle
 }
 .right-top-buttons {
   float: right;
-  padding: 16px;
+  padding: var( --pixles16);
 }
 
 .right-top-buttons a {
@@ -32,12 +42,12 @@ body{
 }
 
 .illustration-intro-container{
-  width: 100%;
+  width: var(--width100Precent);
   display: flex;
 }
 
 .illustration-intro-image{
-  max-width: 100%;
+  width: var(--width100Precent);
   display: block;
   margin: 0 auto;
 }
@@ -47,7 +57,7 @@ body{
 }
 
 .top-paragprph, .file-security-paragprph{
-  width: 100%;
+  width: var(--width100Precent);
   display: flex;
   justify-content: center;
 }
@@ -60,23 +70,23 @@ body{
   margin: 0 auto;
   border-radius: 8vh;
   display: block;
-  background-color: hsl(176, 68%, 64%);
+  background-color: var(--cyne);
 }
 
 .infoGrid{
-  max-width: 100%;
+  max-width: var(--width100Precent);
   float: center;
-  margin: 20px ;
+  margin: var( --pixles20); ;
   display:grid;
   justify-content: center;
   grid-template-columns: 25% 25%;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: var( --pixles20);
+  grid-row-gap: var( --pixles20);
   
 }
 
 .infoGridItem{
-  padding:20px;
+  padding:var( --pixles20);
   border-radius:10px;
   display:flex;
   flex-flow: column;
@@ -86,7 +96,7 @@ body{
 }
 
 .gridItemImage{
-  max-width: 100%;
+  width: var(--width100Precent);
 }
 
 .dataBelowGrid{
@@ -116,9 +126,9 @@ body{
 
 .howFyloWorksLink{
   text-decoration: underline;
-  font-size: 20px;
-  counter-reset: hsl(176, 68%, 64%);
-  text-decoration-color:hsl(176, 68%, 64%);
+  font-size: var(--pixles20);
+  counter-reset: var(--cyne);
+  text-decoration-color:var(--cyne);
 }
 
 .quotes{
@@ -129,7 +139,7 @@ body{
 
 .quotes div{
   flex: 0 0 25.33%;
-  padding-left: 16px;
+  padding-left: var( --pixles16);
   background-color: hsl(219, 30%, 18%);
   text-align: center;
   margin: 6px;
@@ -156,17 +166,17 @@ body{
 
 .getEarlyAccesBox{
   background-color: hsl(219, 30%, 18%);
-  width: 35%;;
+  width: 35%;
   margin: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: var( --pixles16);
+  padding-right: var( --pixles16);
   height: fit-content;
-  padding: 16px;
+  padding: var( --pixles16);
   
 }
 
 .getEarlyAccesBox button{
-  background-color: hsl(176, 68%, 64%);
+  background-color: var(--cyne);
 }
 
 .getStartetForFreeText{
@@ -181,7 +191,7 @@ body{
 
 h3{
   text-align: center;
-  font-size: 16px;
+  font-size: var( --pixles16);
 }
 
 .emailinput{
@@ -190,14 +200,14 @@ h3{
 }
 
 .bottonFyloIcon{
-  background-color: hsl(216, 53%, 9%);
-  width: 100%;
+  background-color: var(--footerColor);
+  width: var(--width100Precent);
 }
 
 .bottomSection{
-  background-color: hsl(216, 53%, 9%);
+  background-color: var(--footerColor);
   height: 150px;
-  margin-bottom: -16px;
+  margin-bottom: -var( --pixles16);
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -230,7 +240,7 @@ h3{
   }
 
   .left-top-icon * {
-    height: 16px;
+    height: var( --pixles16);
   }
 
   .infoGrid{
